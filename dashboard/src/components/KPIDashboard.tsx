@@ -39,7 +39,7 @@ function saveValues(values: Record<string, number | string>) {
 async function loadSAMSummary(): Promise<SAMSummary> {
   const res = await fetch("/sam_data.csv");
   const text = await res.text();
-  const lines = text.split("\n").slice(2); // skip header rows
+  const lines = text.split("\n").slice(2); // skip 2 header rows (title + column headers)
 
   let totalFirms = 0;
   let p1 = 0;
@@ -516,7 +516,7 @@ function MilestoneTargetsTable({ kpis, values }: { kpis: KPI[]; values: Record<s
             return (
               <tr
                 key={kpi.id}
-                className="border-b border-gray-700/50 hover:bg-gray-750"
+                className="border-b border-gray-700/50 hover:bg-gray-800"
               >
                 <td className="py-2 pr-4 text-gray-300 font-medium text-xs">
                   {kpi.name}

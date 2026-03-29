@@ -47,7 +47,6 @@ Open [http://localhost:3000](http://localhost:3000) to view the dashboard.
 - **TypeScript**
 - **Tailwind CSS 4**
 - **Recharts** (charting library)
-- **PapaParse** (CSV parsing)
 
 ## Data Sources
 
